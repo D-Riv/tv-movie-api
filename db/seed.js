@@ -1,5 +1,5 @@
 const dataTV = require("./tvData.json");
-const TV = require("../models/TV");
+const Tv = require("../models/Tv");
 const Movies = require("../models/Movies");
 const data = require("./movieData.json");
 
@@ -17,8 +17,8 @@ const tvData = dataTV.results.map((item) => {
 
 // console.log(tvData);
 
-TV.remove({}).then(() => {
-  TV.create(tvData)
+Tv.remove({}).then(() => {
+  Tv.create(tvData)
     .then((tvShows) => {
       console.log(tvShows);
     })
