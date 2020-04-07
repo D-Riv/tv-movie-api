@@ -12,8 +12,8 @@ app.get("/", function (req, res) {
   res.json({
     Directory: "Choose an option below",
 
-    Movies: "https://group-back-end.herokuapp.com/movie",
-    Shows: "https://group-back-end.herokuapp.com/tv",
+    Movies: "https://tv-movie-api.herokuapp.com/movie",
+    Shows: "https://tv-movie-api.herokuapp.com//tv",
 
     // Movies: "https://localhost:9090/movie",
     // Shows: "https://localhost:9090/tv"
