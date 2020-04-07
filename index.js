@@ -13,15 +13,15 @@ app.get("/", function (req, res) {
     Directory: "Choose an option below",
 
     Movies: "https://tv-movie-api.herokuapp.com/movie",
-    Shows: "https://tv-movie-api.herokuapp.com//tv",
+    Shows: "https://tv-movie-api.herokuapp.com/tv",
 
-    // Movies: "https://localhost:9090/movie",
-    // Shows: "https://localhost:9090/tv"
+    // Movies: "http://localhost:4000/movie",
+    // Shows: "http://localhost:4000/tv",
   });
 });
 
 // app.listen(3000, () => console.log("listening on port 3000"));
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 4000);
 app.listen(app.get("port"), () => {
   console.log(`✅ PORT: ${app.get("port")} 🌟`);
 });
